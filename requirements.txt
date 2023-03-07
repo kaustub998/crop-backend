@@ -9,7 +9,7 @@ filelock==3.9.0
 h11==0.14.0
 idna==3.4
 mysql-connector==2.2.9
-numpy==1.24.2
+numpy==1.21.6
 pipenv==2022.12.19
 platformdirs==2.6.2
 pydantic==1.10.5
