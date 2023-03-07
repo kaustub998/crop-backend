@@ -144,8 +144,8 @@ def submit(items: FormList):
 
     # data[int(item.phone_no)] = dict
 
-            X = np.array([[dict['N'], dict['P'], dict['K'], required_data['temp'], required_data['humidity'], required_data['ph']]])
-            # X = np.array([[dict['N'], dict['P'], dict['K'], 23, 34, 34]])
+            # X = np.array([[dict['N'], dict['P'], dict['K'], required_data['temp'], required_data['humidity'], required_data['ph']]])
+            X = np.array([[dict['N'], dict['P'], dict['K'], 23, 34, 34]])
 
             X = (X - X_mean) / X_std
 
