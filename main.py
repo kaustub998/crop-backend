@@ -107,12 +107,12 @@ def fetch_data(item: Node):
     # print(item.pH)
     # print(data)
 
-# data = {
-#     1: [56, 67, 43],
-#     2: [56, 67, 43],
-#     3: [34, 87, 23],
-#     4: [56, 67, 23]
-# }
+data = {
+    1: [56, 67, 43],
+    2: [56, 67, 43],
+    3: [34, 87, 23],
+    4: [56, 67, 23]
+}
 
 @app.post('/form-submit')
 def submit(items: FormList):
@@ -160,15 +160,15 @@ def submit(items: FormList):
             ans['N'] = dict['N']
             ans['P'] = dict['P']
             ans['K'] = dict['K']
-            ans['pH'] = required_data['pH']
-            ans['temp'] = required_data['temp']
-            ans['hum'] = required_data['humidity']
-            # ans['pH'] = 5
-            # ans['temp'] = 23
-            # ans['hum'] = 34
+            # ans['pH'] = required_data['pH']
+            # ans['temp'] = required_data['temp']
+            # ans['hum'] = required_data['humidity']
+            ans['pH'] = 5
+            ans['temp'] = 23
+            ans['hum'] = 34
             ans['predictions'] = prediction_crop
 
             predictions.append(ans)
 
-    # print(predictions) 
+    print(predictions) 
     return {"result": predictions}
