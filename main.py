@@ -11,7 +11,7 @@ from typing import List
 app = FastAPI()
 
 origins = [
-    "https://merokhet.onrender.com",
+    "*",
 ]
 
 app.add_middleware(
